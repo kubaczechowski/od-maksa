@@ -100,8 +100,8 @@ model.compile(loss=['binary_crossentropy', 'mae'], optimizer='adam', metrics=['a
 
 # plot_model(model)
 
-history = model.fit(x=X, y=[y_gender, y_age], batch_size=32, epochs=30, validation_split=0.2, shuffle=True)
-model.save("trained_model_30.h5")
+history = model.fit(x=X, y=[y_gender, y_age], batch_size=32, epochs=50, validation_split=0.2, shuffle=True)
+model.save("trained_model_50.h5")
 
 acc = history.history['gender_out_accuracy']
 val_acc = history.history['val_gender_out_accuracy']

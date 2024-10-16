@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 MODEL_PATH = 'E:\\PJATK\\rok_4\\SUM\\Age_predictor\\trained_model_30.h5'
 
 # Ścieżka do zdjęcia
-IMAGE_PATH = 'E:\\PJATK\\rok_4\\SUM\\Age_predictor\\Data\\dziad2.jpg'
+IMAGE_PATH = 'E:\\PJATK\\rok_4\\SUM\\Age_predictor\\Data\\lewy.png'
 
 # Ładowanie wytrenowanego modelu
 model = load_model(MODEL_PATH)
