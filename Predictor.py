@@ -5,7 +5,7 @@ from keras.preprocessing.image import img_to_array
 import matplotlib.pyplot as plt
 
 MODEL_PATH = 'E:\\PJATK\\rok_4\\SUM\\Age_predictor\\trained_model_30.h5'
-IMAGE_PATH = 'E:\\PJATK\\rok_4\\SUM\\Age_predictor\\Data\\camera.jpg'
+IMAGE_PATH = 'E:\\PJATK\\rok_4\\SUM\\Age_predictor\\Data\\ksiazulo.jpg'
 
 model = load_model(MODEL_PATH)
 gender_dict = {0: 'Male', 1: 'Female'}
@@ -16,7 +16,7 @@ face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_fronta
 faces = face_cascade.detectMultiScale(gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
 
 # Lista wartości offsetu
-offsets = [-10, 0, 10]
+offsets = [-20, -10, 0, 10, 20, 30]
 
 if len(faces) == 0:
     print("Nie wykryto twarzy na obrazie.")
@@ -44,7 +44,7 @@ else:
             predictions = model.predict(face_array)
 
             # Przewidywana płeć (bierzemy pierwszy offset, ponieważ płeć się nie zmienia)
-            if offset == 10:
+            if offset == 0:
                 predicted_gender = gender_dict[round(predictions[0][0][0])]
 
             # Zbieranie przewidywanych wartości wieku

@@ -5,6 +5,7 @@ from keras.models import load_model
 from keras.preprocessing.image import img_to_array
 from PIL import Image
 import matplotlib.pyplot as plt
+from collections import Counter
 
 # Load the trained model
 MODEL_PATH = 'E:\\PJATK\\rok_4\\SUM\\Age_predictor\\trained_model_30.h5'
@@ -13,14 +14,13 @@ model = load_model(MODEL_PATH)
 # Gender dictionary
 gender_dict = {0: 'Male', 1: 'Female'}
 
-
 # Function to process image and predict age and gender
 def process_image_with_model(image):
     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
     faces = face_cascade.detectMultiScale(gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
 
-    offsets = [-10, 0, 5, 10, 20]
+    offsets = [-20, -10, 0, 10, 20, 30]
     result = ""
 
     if len(faces) == 0:
@@ -28,6 +28,7 @@ def process_image_with_model(image):
     else:
         for (x, y, w, h) in faces:
             age_predictions = []
+            gender_predictions = []
 
             for offset in offsets:
                 x_offset = max(x - offset, 0)
@@ -42,27 +43,32 @@ def process_image_with_model(image):
                 face_array = np.expand_dims(face_array, axis=0)
 
                 predictions = model.predict(face_array)
-                if offset == 5:
-                    predicted_gender = gender_dict[round(predictions[0][0][0])]
 
+                # Zbieranie przewidywań płci dla każdego offsetu
+                predicted_gender_index = round(predictions[0][0][0])
+                gender_predictions.append(predicted_gender_index)
+
+                # Zbieranie przewidywań wieku
                 predicted_age = predictions[1][0][0]
                 age_predictions.append(predicted_age)
 
+            # Wybieranie najczęściej występującej płci
+            most_common_gender_index = Counter(gender_predictions).most_common(1)[0][0]
+            predicted_gender = gender_dict[most_common_gender_index]
+
+            # Obliczanie średniej wieku
             average_age = round(np.mean(age_predictions))
             result = f"Predicted Gender: {predicted_gender}, Average Age: {average_age}"
 
     return result
 
-
 # Initialize session state for navigation
 if "page" not in st.session_state:
     st.session_state.page = "landing"
 
-
 # Function to set the current page
 def set_page(page):
     st.session_state.page = page
-
 
 # Landing Page
 if st.session_state.page == "landing":
