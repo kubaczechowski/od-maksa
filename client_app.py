@@ -20,7 +20,7 @@ def process_image_with_model(image):
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
     faces = face_cascade.detectMultiScale(gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
 
-    offsets = [-20, -10, 0, 10, 20, 30]
+    offsets = [-10, 0, 10, 20]
     result = ""
 
     if len(faces) == 0:
@@ -61,6 +61,45 @@ def process_image_with_model(image):
             result = f"Predicted Gender: {predicted_gender}, Average Age: {average_age}"
 
     return result
+
+
+# def process_image_with_model(image):
+#     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+#     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
+#     faces = face_cascade.detectMultiScale(gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
+#
+#     offsets = [-10, 0, 10, 20, 30]
+#     result = ""
+#
+#     if len(faces) == 0:
+#         result = "No face detected in the image."
+#     else:
+#         for (x, y, w, h) in faces:
+#             age_predictions = []
+#
+#             for offset in offsets:
+#                 x_offset = max(x - offset, 0)
+#                 y_offset = max(y - offset, 0)
+#                 w_offset = min(x + w + offset, gray_image.shape[1]) - x_offset
+#                 h_offset = min(y + h + offset, gray_image.shape[0]) - y_offset
+#
+#                 face = gray_image[y_offset:y_offset + h_offset, x_offset:x_offset + w_offset]
+#                 face_resized = cv2.resize(face, (128, 128))
+#                 face_normalized = face_resized / 255.0
+#                 face_array = img_to_array(face_normalized)
+#                 face_array = np.expand_dims(face_array, axis=0)
+#
+#                 predictions = model.predict(face_array)
+#                 if offset == -10:
+#                     predicted_gender = gender_dict[round(predictions[0][0][0])]
+#
+#                 predicted_age = predictions[1][0][0]
+#                 age_predictions.append(predicted_age)
+#
+#             average_age = round(np.mean(age_predictions))
+#             result = f"Predicted Gender: {predicted_gender}, Average Age: {average_age}"
+#
+#     return result
 
 # Initialize session state for navigation
 if "page" not in st.session_state:

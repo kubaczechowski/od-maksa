@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9a353b1-de9a-4e87-925d-acdcf2d3c5cf" name="Changes" comment="skibidi">
+    <list default="true" id="b9a353b1-de9a-4e87-925d-acdcf2d3c5cf" name="Changes" comment="skibidi2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/client_app.py" afterDir="false" />
     </list>
@@ -38,12 +38,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\PJATK\rok_4\SUM\Age_predictor" />
       <recent name="E:\PJATK\rok_4\SUM\Age_predictor\Data" />
+      <recent name="E:\PJATK\rok_4\SUM\Age_predictor" />
       <recent name="E:\PJATK\rok_4\SUM\Age_predictor\Data2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Predictor">
+  <component name="RunManager" selected="Python.client_app">
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Age_predictor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -86,6 +86,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="client_app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Age_predictor" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/client_app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="predictor2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Age_predictor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -109,6 +130,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.client_app" />
         <item itemvalue="Python.Predictor" />
         <item itemvalue="Python.predictor2" />
         <item itemvalue="Python.Main" />
