@@ -1,0 +1,554 @@
+{
+  "1-21": {
+    "male": {
+      "summer": {
+        "morning": {
+          "classic": [
+            { "name": "Iced Latte", "base": "Latte", "additions": ["Ice", "Caramel syrup"] },
+            { "name": "Frappuccino", "base": "Espresso", "additions": ["Whipped cream", "Vanilla syrup"] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Iced Matcha Latte", "base": "Latte", "additions": ["Ice", "Matcha syrup"] },
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cold Brew", "base": "Cold Brew", "additions": [] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Cappuccino", "base": "Espresso", "additions": ["Foamed Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Latte", "base": "Latte", "additions": [] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] }
+          ],
+          "seasonal": [
+            { "name": "Pumpkin Spice Latte", "base": "Latte", "additions": ["Pumpkin syrup", "Whipped cream"] }
+          ]
+        }
+      },
+      "winter": {
+        "morning": {
+          "classic": [
+            { "name": "Espresso", "base": "Espresso", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Peppermint Mocha", "base": "Mocha", "additions": ["Mint syrup", "Whipped cream"] },
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cappuccino", "base": "Cappuccino", "additions": [] },
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Hot Chocolate", "base": "Chocolate", "additions": ["Whipped cream", "Cinnamon"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] }
+          ],
+          "seasonal": [
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        }
+      }
+    },
+    "female": {
+      "summer": {
+        "morning": {
+          "classic": [
+            { "name": "Iced Latte", "base": "Latte", "additions": ["Ice", "Caramel syrup"] },
+            { "name": "Frappuccino", "base": "Espresso", "additions": ["Whipped cream", "Vanilla syrup"] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Iced Matcha Latte", "base": "Latte", "additions": ["Ice", "Matcha syrup"] },
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cold Brew", "base": "Cold Brew", "additions": [] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Cappuccino", "base": "Espresso", "additions": ["Foamed Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Latte", "base": "Latte", "additions": [] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] }
+          ],
+          "seasonal": [
+            { "name": "Pumpkin Spice Latte", "base": "Latte", "additions": ["Pumpkin syrup", "Whipped cream"] }
+          ]
+        }
+      },
+      "winter": {
+        "morning": {
+          "classic": [
+            { "name": "Espresso", "base": "Espresso", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Peppermint Mocha", "base": "Mocha", "additions": ["Mint syrup", "Whipped cream"] },
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cappuccino", "base": "Cappuccino", "additions": [] },
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Hot Chocolate", "base": "Chocolate", "additions": ["Whipped cream", "Cinnamon"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] }
+          ],
+          "seasonal": [
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        }
+      }
+    }
+  },
+  "22-25": {
+    "male": {
+      "summer": {
+        "morning": {
+          "classic": [
+            { "name": "Iced Latte", "base": "Latte", "additions": ["Ice", "Caramel syrup"] },
+            { "name": "Frappuccino", "base": "Espresso", "additions": ["Whipped cream", "Vanilla syrup"] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Iced Matcha Latte", "base": "Latte", "additions": ["Ice", "Matcha syrup"] },
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cold Brew", "base": "Cold Brew", "additions": [] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Cappuccino", "base": "Espresso", "additions": ["Foamed Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Latte", "base": "Latte", "additions": [] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] }
+          ],
+          "seasonal": [
+            { "name": "Pumpkin Spice Latte", "base": "Latte", "additions": ["Pumpkin syrup", "Whipped cream"] }
+          ]
+        }
+      },
+      "winter": {
+        "morning": {
+          "classic": [
+            { "name": "Espresso", "base": "Espresso", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Peppermint Mocha", "base": "Mocha", "additions": ["Mint syrup", "Whipped cream"] },
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cappuccino", "base": "Cappuccino", "additions": [] },
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Hot Chocolate", "base": "Chocolate", "additions": ["Whipped cream", "Cinnamon"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] }
+          ],
+          "seasonal": [
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        }
+      }
+    },
+    "female": {
+      "summer": {
+        "morning": {
+          "classic": [
+            { "name": "Iced Latte", "base": "Latte", "additions": ["Ice", "Caramel syrup"] },
+            { "name": "Frappuccino", "base": "Espresso", "additions": ["Whipped cream", "Vanilla syrup"] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Iced Matcha Latte", "base": "Latte", "additions": ["Ice", "Matcha syrup"] },
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cold Brew", "base": "Cold Brew", "additions": [] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Cappuccino", "base": "Espresso", "additions": ["Foamed Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Latte", "base": "Latte", "additions": [] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] }
+          ],
+          "seasonal": [
+            { "name": "Pumpkin Spice Latte", "base": "Latte", "additions": ["Pumpkin syrup", "Whipped cream"] }
+          ]
+        }
+      },
+      "winter": {
+        "morning": {
+          "classic": [
+            { "name": "Espresso", "base": "Espresso", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Peppermint Mocha", "base": "Mocha", "additions": ["Mint syrup", "Whipped cream"] },
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cappuccino", "base": "Cappuccino", "additions": [] },
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Hot Chocolate", "base": "Chocolate", "additions": ["Whipped cream", "Cinnamon"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] }
+          ],
+          "seasonal": [
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        }
+      }
+    }
+  },
+  "26-30": {
+    "male": {
+      "summer": {
+        "morning": {
+          "classic": [
+            { "name": "Iced Latte", "base": "Latte", "additions": ["Ice", "Caramel syrup"] },
+            { "name": "Frappuccino", "base": "Espresso", "additions": ["Whipped cream", "Vanilla syrup"] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Iced Matcha Latte", "base": "Latte", "additions": ["Ice", "Matcha syrup"] },
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cold Brew", "base": "Cold Brew", "additions": [] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Cappuccino", "base": "Espresso", "additions": ["Foamed Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Latte", "base": "Latte", "additions": [] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] }
+          ],
+          "seasonal": [
+            { "name": "Pumpkin Spice Latte", "base": "Latte", "additions": ["Pumpkin syrup", "Whipped cream"] }
+          ]
+        }
+      },
+      "winter": {
+        "morning": {
+          "classic": [
+            { "name": "Espresso", "base": "Espresso", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Peppermint Mocha", "base": "Mocha", "additions": ["Mint syrup", "Whipped cream"] },
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cappuccino", "base": "Cappuccino", "additions": [] },
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Hot Chocolate", "base": "Chocolate", "additions": ["Whipped cream", "Cinnamon"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] }
+          ],
+          "seasonal": [
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        }
+      }
+    },
+    "female": {
+      "summer": {
+        "morning": {
+          "classic": [
+            { "name": "Iced Latte", "base": "Latte", "additions": ["Ice", "Caramel syrup"] },
+            { "name": "Frappuccino", "base": "Espresso", "additions": ["Whipped cream", "Vanilla syrup"] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Iced Matcha Latte", "base": "Latte", "additions": ["Ice", "Matcha syrup"] },
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cold Brew", "base": "Cold Brew", "additions": [] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Cappuccino", "base": "Espresso", "additions": ["Foamed Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Latte", "base": "Latte", "additions": [] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] }
+          ],
+          "seasonal": [
+            { "name": "Pumpkin Spice Latte", "base": "Latte", "additions": ["Pumpkin syrup", "Whipped cream"] }
+          ]
+        }
+      },
+      "winter": {
+        "morning": {
+          "classic": [
+            { "name": "Espresso", "base": "Espresso", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Peppermint Mocha", "base": "Mocha", "additions": ["Mint syrup", "Whipped cream"] },
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cappuccino", "base": "Cappuccino", "additions": [] },
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Hot Chocolate", "base": "Chocolate", "additions": ["Whipped cream", "Cinnamon"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] }
+          ],
+          "seasonal": [
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        }
+      }
+    }
+  },
+  "31-100": {
+    "male": {
+      "summer": {
+        "morning": {
+          "classic": [
+            { "name": "Iced Latte", "base": "Latte", "additions": ["Ice", "Caramel syrup"] },
+            { "name": "Frappuccino", "base": "Espresso", "additions": ["Whipped cream", "Vanilla syrup"] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Iced Matcha Latte", "base": "Latte", "additions": ["Ice", "Matcha syrup"] },
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cold Brew", "base": "Cold Brew", "additions": [] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Cappuccino", "base": "Espresso", "additions": ["Foamed Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Latte", "base": "Latte", "additions": [] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] }
+          ],
+          "seasonal": [
+            { "name": "Pumpkin Spice Latte", "base": "Latte", "additions": ["Pumpkin syrup", "Whipped cream"] }
+          ]
+        }
+      },
+      "winter": {
+        "morning": {
+          "classic": [
+            { "name": "Espresso", "base": "Espresso", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Peppermint Mocha", "base": "Mocha", "additions": ["Mint syrup", "Whipped cream"] },
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cappuccino", "base": "Cappuccino", "additions": [] },
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Hot Chocolate", "base": "Chocolate", "additions": ["Whipped cream", "Cinnamon"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] }
+          ],
+          "seasonal": [
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        }
+      }
+    },
+    "female": {
+      "summer": {
+        "morning": {
+          "classic": [
+            { "name": "Iced Latte", "base": "Latte", "additions": ["Ice", "Caramel syrup"] },
+            { "name": "Frappuccino", "base": "Espresso", "additions": ["Whipped cream", "Vanilla syrup"] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Iced Matcha Latte", "base": "Latte", "additions": ["Ice", "Matcha syrup"] },
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cold Brew", "base": "Cold Brew", "additions": [] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Cappuccino", "base": "Espresso", "additions": ["Foamed Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Tonic Espresso", "base": "Espresso", "additions": ["Tonic water", "Ice"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Latte", "base": "Latte", "additions": [] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] }
+          ],
+          "seasonal": [
+            { "name": "Pumpkin Spice Latte", "base": "Latte", "additions": ["Pumpkin syrup", "Whipped cream"] }
+          ]
+        }
+      },
+      "winter": {
+        "morning": {
+          "classic": [
+            { "name": "Espresso", "base": "Espresso", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] },
+            { "name": "Flat White", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Peppermint Mocha", "base": "Mocha", "additions": ["Mint syrup", "Whipped cream"] },
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        },
+        "afternoon": {
+          "classic": [
+            { "name": "Cappuccino", "base": "Cappuccino", "additions": [] },
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Caffe Latte", "base": "Espresso", "additions": ["Milk"] }
+          ],
+          "seasonal": [
+            { "name": "Hot Chocolate", "base": "Chocolate", "additions": ["Whipped cream", "Cinnamon"] }
+          ]
+        },
+        "evening": {
+          "classic": [
+            { "name": "Americano", "base": "Americano", "additions": [] },
+            { "name": "Affogato", "base": "Espresso", "additions": ["Vanilla ice cream"] },
+            { "name": "Macchiato", "base": "Espresso", "additions": ["Foamed milk"] }
+          ],
+          "seasonal": [
+            { "name": "Gingerbread Latte", "base": "Latte", "additions": ["Gingerbread syrup", "Whipped cream"] }
+          ]
+        }
+      }
+    }
+  }
+}
