@@ -3,7 +3,41 @@
   <component name="ChangeListManager">
     <list default="true" id="b9a353b1-de9a-4e87-925d-acdcf2d3c5cf" name="Changes" comment="skibidi2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/33_0_4_20170104172529099.jpg.chip.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/andrzej.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/camera.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/camera2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/camera3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/duda.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/dziad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/dziad2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/friz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/isamu.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/kaczor.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/ksiazulo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/lewy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/messi.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/messi2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/morawiecki.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/skolim.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/wardega.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data/wardega.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data2/age_deploy.prototxt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data2/age_net.caffemodel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data2/gender_deploy.prototxt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data2/gender_net.caffemodel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data2/gessler.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data2/rodowicz.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data2/rutkowski.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data2/stanowski2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data2/stonog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data2/wersow.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data2/zugajka.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Predictor.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/client_app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

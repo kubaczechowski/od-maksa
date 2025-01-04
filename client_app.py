@@ -10,10 +10,11 @@ from keras.losses import MeanAbsoluteError
 from keras.models import load_model
 from keras.utils import img_to_array
 
-MODEL_PATH = 'C://Users//maksd//OneDrive//Pulpit//Age_predictor//trained_model_30.h5'
+MODEL_PATH = '..//trained_model_30.h5'
 model = load_model(MODEL_PATH, custom_objects={"mae": MeanAbsoluteError})
 
 gender_dict = {0: 'Male', 1: 'Female'}
+
 
 def get_coffee_recommendations(age, gender, season, time_of_day, coffee_data):
     age = int(age)
@@ -30,17 +31,15 @@ def get_coffee_recommendations(age, gender, season, time_of_day, coffee_data):
     print(recommendations)
     return recommendations
 
+
 def load_coffee_data(file_path):
     try:
         with open(file_path, 'r', encoding='utf-8') as file:
             coffee_data = json.load(file)
         return coffee_data
-    except FileNotFoundError:
-        print(f"Plik {file_path} nie został znaleziony.")
+    except Exception:
         return {}
-    except json.JSONDecodeError:
-        print(f"Błąd dekodowania JSON w pliku {file_path}.")
-        return {}
+
 
 def get_season(current_date=None):
     if current_date is None:
@@ -62,6 +61,7 @@ def get_season(current_date=None):
     else:
         return "winter"
 
+
 def get_time_of_day(current_time=None):
     if current_time is None:
         current_time = datetime.now().time()
@@ -75,8 +75,10 @@ def get_time_of_day(current_time=None):
     else:
         return "night"
 
+
 print(get_season())
 print(get_time_of_day())
+
 
 def process_image_with_model(image):
     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -116,16 +118,16 @@ def process_image_with_model(image):
             most_common_gender_index = Counter(gender_predictions).most_common(1)[0][0]
             predicted_gender = gender_dict[most_common_gender_index]
 
-
             average_age = round(np.mean(age_predictions))
             result = f"Predicted Gender: {predicted_gender}, Average Age: {average_age} \n"
             season = get_season()
             time_of_day = get_time_of_day()
-            coffee = load_coffee_data('C://Users//maksd//OneDrive//Pulpit//Age_predictor//Data//coffeeV4.json')
+            coffee = load_coffee_data('..//Data//coffeeV4.json')
 
             predicted_gender = predicted_gender.lower()
 
-            recommendations = get_coffee_recommendations(average_age, predicted_gender, season=season, time_of_day=time_of_day, coffee_data=coffee)
+            recommendations = get_coffee_recommendations(average_age, predicted_gender, season=season,
+                                                         time_of_day=time_of_day, coffee_data=coffee)
             print(type(recommendations))
             if 'classic' in recommendations:
                 result += "Classic Recommendations:\n"
@@ -142,49 +144,13 @@ def process_image_with_model(image):
     return result
 
 
-# def process_image_with_model(image):
-#     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-#     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
-#     faces = face_cascade.detectMultiScale(gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(30, 30))
-#
-#     offsets = [-10, 0, 10, 20, 30]
-#     result = ""
-#
-#     if len(faces) == 0:
-#         result = "No face detected in the image."
-#     else:
-#         for (x, y, w, h) in faces:
-#             age_predictions = []
-#
-#             for offset in offsets:
-#                 x_offset = max(x - offset, 0)
-#                 y_offset = max(y - offset, 0)
-#                 w_offset = min(x + w + offset, gray_image.shape[1]) - x_offset
-#                 h_offset = min(y + h + offset, gray_image.shape[0]) - y_offset
-#
-#                 face = gray_image[y_offset:y_offset + h_offset, x_offset:x_offset + w_offset]
-#                 face_resized = cv2.resize(face, (128, 128))
-#                 face_normalized = face_resized / 255.0
-#                 face_array = img_to_array(face_normalized)
-#                 face_array = np.expand_dims(face_array, axis=0)
-#
-#                 predictions = model.predict(face_array)
-#                 if offset == -10:
-#                     predicted_gender = gender_dict[round(predictions[0][0][0])]
-#
-#                 predicted_age = predictions[1][0][0]
-#                 age_predictions.append(predicted_age)
-#
-#             average_age = round(np.mean(age_predictions))
-#             result = f"Predicted Gender: {predicted_gender}, Average Age: {average_age}"
-#
-#     return result
-
 if "page" not in st.session_state:
     st.session_state.page = "landing"
 
+
 def set_page(page):
     st.session_state.page = page
+
 
 if st.session_state.page == "landing":
     st.title("🌟 SUML SZABROWNICY!")
