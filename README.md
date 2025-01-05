@@ -12,7 +12,12 @@ Na podstawie dostarczonego zdjęcia użytkownik otrzymuje rekomendację. Przykł
 
 
 ## Jak uruchomić
-Należy wejść do folderu projektu a następnie wykonać komendę
+Przed uruchomieniem należy pobrać potrzebne zależności:
+```
+pip install json-logging collections-extended opencv-python-headless numpy streamlit pillow keras
+```
+
+A następnie należy wejść do folderu projektu a następnie wykonać komendę:
 
 ```
 streamlit run client_app.py 
@@ -24,3 +29,4 @@ Do stworzenia prototypu zostały wykorzystane poniższe technologie:
  - Python
  - Keras
  - TensorFlow
+ - Głowa Matiego
