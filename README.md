@@ -14,7 +14,7 @@ Na podstawie dostarczonego zdjęcia użytkownik otrzymuje rekomendację. Przykł
 ## Jak uruchomić
 Przed uruchomieniem należy pobrać potrzebne zależności:
 ```
-pip install json-logging collections-extended opencv-python-headless numpy streamlit pillow keras
+pip install -r requirements.txt
 ```
 
 A następnie należy wejść do folderu projektu a następnie wykonać komendę:
@@ -29,4 +29,3 @@ Do stworzenia prototypu zostały wykorzystane poniższe technologie:
  - Python
  - Keras
  - TensorFlow
- - Głowa Matiego
